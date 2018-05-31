@@ -1,0 +1,62 @@
+<a href="#/adrs">Go Back</a>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Edit Adr</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="updateAdr()" ng-init="getAdr()">
+        <div class="form-group">
+          <label>Title</label>
+          <input type="text" class="form-control" ng-model="adr.title" placeholder="Title">
+        </div>
+        <div class="form-group">
+            <label>App</label>
+            <select ng-model="adr.app" class="form-control">
+                <option value="CTM ABS">CTM ABS</option>
+                <option value="GPC">GPC</option>
+                <option value="VRS">VRS</option>
+                <option value="DRILLDOWN">DRILLDOWN</option>
+                <option value="PRIMES">PRIMES</option>
+              </select>
+        </div>
+        <div class="form-group">
+          <label>Theme</label>
+          <select ng-model="adr.theme" class="form-control">
+            <option value="integration">integration</option>
+            <option value="presentation">presentation</option>
+            <option value="data">data</option>
+            <option value="performance">performance</option>
+            <option value="security">security</option>
+            <option value="front_end">Front End</option>
+            <option value="back_end">Back End</option>
+            <option value="database">Database</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Context</label>
+          <input type="text" class="form-control" ng-model="adr.context" placeholder="Context">
+        </div>
+        <div class="form-group">
+          <label>Options_considered</label>
+          <input type="text" class="form-control" ng-model="adr.options_considered" placeholder="options_considered">
+        </div>
+        <div class="form-group">
+          <label>Option_selected</label>
+          <input type="text" class="form-control" ng-model="adr.option_selected" placeholder="Option_selected">
+        </div>
+        <div class="form-group">
+          <label>Rationale</label>
+          <textarea class="form-control" ng-model="adr.rationale" placeholder="Rationale"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Implications</label>
+          <textarea class="form-control" ng-model="adr.implications" placeholder="Implications"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>

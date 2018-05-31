@@ -1,0 +1,39 @@
+<!--<div class=form-group ng-controller="AdrsController">
+ <h1>{{title}}</h1>
+  <select name="show-filter" ng-model="catFilter" ng-options="category as category.title for category in ourTeamCategories">
+  </select>
+
+  <li ng-repeat="cat in ourTeamCategories | filter : {id: catFilter.id}: true">
+    <h3>{{cat.title}}</h3>
+    <b>input: {{catFilter.id}}</b> - - ID: {{cat.id}}
+  </li>
+</div> -->
+
+ <div class="form-group">
+    <label>App</label>
+    <select name="show-app" ng-model="adr1" class="form-control" ng-change="onChange()">
+        <option value="CTM-ABS">CTM-ABS</option>
+        <option value="GPC">GPC</option>
+        <option value="VRS">VRS</option>
+        <option value="DRILLDOWN">DRILLDOWN</option>
+        <option value="PRIMES">PRIMES</option>
+      </select>
+  </div> 
+ 
+
+<div class="panel panel-default" ng-init="getAdrs()">
+  <div class="panel-heading">
+    <h3 class="panel-title">Latest ADRs</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+    	<div ng-repeat="adr in adrs" | filter:adr1> 
+    		<div class="col-md-6 list {{adr.app}}">
+    				<h4>{{adr.title}}</h4>
+    				<p>{{adr.app}}</p>
+    				<a class="btn btn-primary" href="#/adrs/details/{{adr._id}}">View Details</a>
+    		</div>
+    	</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<a href="#/adrs">Go Back</a>
+<div class="panel panel-default" ng-init="getAdr()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{adr.title}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-12">
+        </p>{{adr.app}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Theme: {{adr.theme}}</li>
+          <li class="list-group-item">Context: {{adr.context}}</li>
+          <li class="list-group-item">Options_considered: {{adr.options_considered}}</li>
+          <li class="list-group-item">Option_selected: {{adr.option_selected}}</li>
+          <li class="list-group-item">Rationale: {{adr.rationale}}</li>
+          <li class="list-group-item">Implications: {{adr.implications}} </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="pull-right">
+  <a href="#/adrs/edit/{{adr._id}}">Edit</a> |  <a href="#" ng-click="removeAdr(adr._id)">Delete</a>
+  </div>
