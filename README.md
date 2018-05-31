@@ -4,8 +4,8 @@ It is an ADR(Architectural Decision record) project to do CRUD operations. It ha
 To run this project : 
 -Install the mongodb.
 -Run the "mongod" command. It should be running in the port 27017.
--Open the mongo client by running the command mongo
--use mydb
+-Open the mongo client by running the command "mongo"
+-In the mongo shell run the command use "adr-repository"
 -create a collection with following fields 
     "create_date" 
     "title"       
@@ -17,6 +17,6 @@ To run this project :
     "rationale" 
     "implications"
     
- -download the project and do "npm install"       ---> This will download all the dependencies
+ -download the project from github and do "npm install"       ---> This will download all the dependencies
  -To run the project , enter "node app"           ---> This will make the application to run on port 3000
  -Open the browser and type the url "http://localhost:3000" where it will open the ADR application
