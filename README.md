@@ -5,7 +5,7 @@ To run this project :
 -Install the mongodb.
 -Run the "mongod" command. It should be running in the port 27017.
 -Open the mongo client by running the command "mongo"
--In the mongo shell run the command use "adr-repository"
+-In the mongo shell, run the command "use adr-repository"
 -create a collection with following fields 
     "create_date" 
     "title"       
